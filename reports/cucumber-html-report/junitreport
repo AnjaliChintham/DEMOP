@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="185.911421">
+    <testcase classname="Demoblaze website" name="Sign up with demoblaze website" time="102.607014">
+        <system-out><![CDATA[Given the user launches the browser.........................................passed
+When the user opens the application.........................................passed
+When the user clicks the sign up link.......................................passed
+When the user enter the username and password and clicks on singup..........passed
+Then take a Screenshot of Sign up...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Demoblaze website" name="Login in to the demoblaze website" time="19.648874">
+        <failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}&#10;  (Session info: chrome=80.0.3987.149): Wrong password.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-HPDV7GE', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\opava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 0255c1fb6fa00f89f2e198fb824455d2&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)&#13;&#10;&#9;at com.pages.Login_page.login_buttonclick(Login_page.java:75)&#13;&#10;&#9;at com.stepdefinition.Login_stepdefinition.click_on_login_button(Login_stepdefinition.java:41)&#13;&#10;&#9;at ✽.Then click on login button(src/main/resources/Feature/demoblazetest.feature:17)&#13;&#10;"><![CDATA[Given the user launch the application.......................................passed
+When the user clicks on login link..........................................passed
+When the user enter username as "Narasimharao123" & password "narasimharao123".passed
+Then click on login button..................................................failed
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=80.0.3987.149): Wrong password.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HPDV7GE', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\opava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0255c1fb6fa00f89f2e198fb824455d2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.pages.Login_page.login_buttonclick(Login_page.java:75)
+	at com.stepdefinition.Login_stepdefinition.click_on_login_button(Login_stepdefinition.java:41)
+	at ✽.Then click on login button(src/main/resources/Feature/demoblazetest.feature:17)
+]]></failure>
+    </testcase>
+    <testcase classname="Demoblaze website" name="Selecting the Monitors from the demobalze application" time="20.175991">
+        <system-out><![CDATA[Given the user launch the demoblaze application.............................passed
+When the user clicks on montiors under categories...........................passed
+When the user click on the reuired monitor and added to cart................passed
+Then the user get a message.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Demoblaze website" name="Providing the contact details" time="18.007677">
+        <system-out><![CDATA[Given the user launch the demoblaze site....................................passed
+When the user clicks on contact link........................................passed
+When the user enter the email name and message..............................passed
+Then the user get a pop window message......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Demoblaze website" name="Getting the website description" time="25.471865">
+        <system-out><![CDATA[Given the user launches the demoblaze website...............................passed
+When the user scrolldown the website page...................................passed
+Then the user check the information available and get the description on console.passed
+]]></system-out>
+    </testcase>
+</testsuite>
